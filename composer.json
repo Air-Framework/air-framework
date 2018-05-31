@@ -1,4 +1,8 @@
 {
+    "name": "airframework/airframework",
+    "description": "Light mvc framework providing simple routing system, twig templates and yml support.",
+    "type": "library",
+    "license": "0BSD",
     "authors": [
         {
             "name": "Abderrahman Daif",
@@ -9,14 +13,16 @@
             "email": "lionel.tordjman@gmail.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Air\\": "core/Air"
-        }
-    },
+    "minimum-stability": "dev",
     "require": {
+        "php": ">=7.0.0",
         "twig/twig": "^1.31",
         "symfony/yaml": "^3.2",
         "symfony/var-dumper": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Air\\": "src/"
+        }
     }
 }
