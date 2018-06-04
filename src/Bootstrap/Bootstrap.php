@@ -71,8 +71,10 @@ class Bootstrap
 
         if (!is_dir($viewsPath))
             throw new \Exception("Air\Bootstrap\Bootstrap.php : views paths must be defined.
-                Folder $this->viewsPath does not exist");        $this->parseUri();
-
+                Folder $this->viewsPath does not exist");
+		
+		$this->parseUri();
+		
         $foundRoute = false;
         $routes = ParameterHelper::getParam('config/routes', 'routes');
         if ($routes) {
