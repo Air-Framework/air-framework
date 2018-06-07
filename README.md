@@ -137,3 +137,5 @@ routes:
     'controller': '\AppNamespace\Controller\AjaxController'
     'method': 'myFirstRouteAction'
 ```
+* test and feel free to add Issues
+* Thanks to fly with us :)
