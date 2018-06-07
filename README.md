@@ -89,6 +89,8 @@ try {
 ```
 * Create your first Controller file (by default IndexController.php) Into Your AppNamespace/Controller directory extending BaseController
 * above default IndexController.php
+* Route follows this schema http(s)://base_url/controllerNiceName/methodNiceName/param1/param1
+* ex : http://base_url/custom/my-param-method/firstParam/secondParam will arrived To CustomController:myParamMethodAction with params: param1 and param2 
 ```
 # AppNamespace/Controller/IndexController.php
 
@@ -127,3 +129,11 @@ class IndexController extends BaseController
 }
 ```
 * create index.html.twig into your view directory
+* add a config/router.yml if you prefer adding your routes in a separate file
+```
+routes:
+  'my_first_route':
+    'pattern': '/route/{param1}/first/{param2}'
+    'controller': '\AppNamespace\Controller\AjaxController'
+    'method': 'myFirstRouteAction'
+```
