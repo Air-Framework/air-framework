@@ -8,8 +8,11 @@ Requirement
 
 Install
 ---------
-* Clone this repository
-* Run `composer install` and `composer update`
+* Clone this repository Or download the github repository
+* `mkdir {project}`
+* `cd {folder}`
+* `composer require airframework/airframework:@dev`
+* Run `composer install` 
 * Decide wich Namespace you want to use Depending on you tree. We'll used `AppNamespace` for this Readme
 * Decide where to store your views and your config, respectively views and config for this Readme
 * Create your AppNamespace directory and create following files: index.php and .htaccess (replacing `AppNamespace`, `views` if needed) 
