@@ -21,7 +21,7 @@ use Symfony\Component\Yaml\Exception\ParseException;
 class ParameterHelper
 {
 
-    public static function getParam($filePath, $param, $directory = '/Resources/')
+    public static function getParam($filePath, $param, $directory = '/config/')
     {
         $aParam = [];
         if ($file = @file_get_contents($_SERVER['DOCUMENT_ROOT'].$directory.$filePath.'.yml')) {

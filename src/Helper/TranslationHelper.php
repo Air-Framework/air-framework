@@ -40,7 +40,7 @@ class TranslationHelper
     public static function loadTranslation($text)
     {
         $locale      = self::getLocale();
-        $translation = ParameterHelper::getParam('translations/'.$locale, $text);
+        $translation = ParameterHelper::getParam('i18n/'.$locale, $text, '/');
 
         return isset($translation) ? $translation : $text;
     }
